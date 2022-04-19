@@ -41,6 +41,11 @@ class Category
         $this->posts = new ArrayCollection();
     }
 
+    public function __toString()  //Chaque fois qu'un mécanisme requiert une description texte des instances
+    {
+        return $this->name;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
