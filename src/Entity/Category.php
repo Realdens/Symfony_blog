@@ -43,7 +43,7 @@ class Category
 
     public function __toString()  //Chaque fois qu'un mécanisme requiert une description texte des instances
     {
-        return $this->name;
+        return $this->id . '-' . $this->name;
     }
 
     public function getId(): ?int
