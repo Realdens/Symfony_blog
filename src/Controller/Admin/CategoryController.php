@@ -65,8 +65,9 @@ class CategoryController extends AbstractController
        if ($form->isSubmitted() && $form->isValid()) {
            //$em = $this->getDoctrine()->getManager();
            $em = $doctrine->getManager();
-           $em->persist($category);
+           //$em->persist($category);
            $em->flush();
+           $this->addFlash('success', 'Catégorie modifiée !');
            return $this->redirectToRoute('admin_category_index');
        }
 
