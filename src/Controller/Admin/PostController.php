@@ -4,8 +4,6 @@ namespace App\Controller\Admin;
 
 use App\Entity\Post;
 use App\Form\PostType;
-use App\Entity\Category;
-use App\Form\CategoryType;
 use App\Repository\PostRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\Request;
